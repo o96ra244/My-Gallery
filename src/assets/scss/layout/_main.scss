@@ -1,0 +1,17 @@
+.l-main {
+  margin: 0 0 100px;
+  //overflow: hidden;
+  *zoom: 1;
+
+  @include mq(md) {
+    margin: 0 0 40px;
+  }
+
+  @at-root .p-home & {
+    @include mq(lg, min) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+}
